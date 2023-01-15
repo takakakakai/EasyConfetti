@@ -37,6 +37,8 @@ public enum Particle {
 public struct Configuration {
     /// Specify the particle shapes
     public var particle: Particle = .confetti(allowedShapes: Particle.ConfettiShape.all)
+    public var yOrigin: CGFloat = 0
+    public var yMultiplier: CGFloat = 1
 
     /// The list of available colors. This will be shuffled
     public var colors: [UIColor] = [
